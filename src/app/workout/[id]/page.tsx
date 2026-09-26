@@ -35,7 +35,7 @@ export default function WorkoutDetailPage() {
       </Link>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-        {/* Left Side — Visual */}
+        
         <div className="relative w-full h-[380px] sm:h-[480px] lg:h-[600px] bg-[#13151b] border border-zinc-800 rounded-3xl overflow-hidden">
           <img
             src={workout.image}
@@ -44,7 +44,7 @@ export default function WorkoutDetailPage() {
           />
         </div>
 
-        {/* Right Side — Details */}
+        
         <div className="space-y-8">
           <div className="space-y-4">
             <div className="flex flex-wrap gap-2">
@@ -67,7 +67,7 @@ export default function WorkoutDetailPage() {
             </p>
           </div>
 
-          {/* Key Specs Table */}
+          
           <div className="bg-[#13151b] border border-zinc-800 rounded-2xl p-5 divide-y divide-zinc-800/80">
             <div className="flex justify-between py-2.5 text-xs sm:text-sm">
               <span className="text-zinc-500 font-bold uppercase">Equipment</span>
@@ -99,7 +99,7 @@ export default function WorkoutDetailPage() {
             </div>
           </div>
 
-          {/* Instructions */}
+        
           <div className="space-y-4">
             <h2 className="text-lg font-black uppercase tracking-wider text-white">
               INSTRUCTIONS
@@ -116,7 +116,7 @@ export default function WorkoutDetailPage() {
             </ol>
           </div>
 
-          {/* CTA Buttons */}
+      
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <button
               onClick={() => togglePlan(workout)}
