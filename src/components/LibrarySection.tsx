@@ -13,7 +13,7 @@ const LibrarySection: React.FC<LibrarySectionProps> = ({ workouts = workoutsData
     <section id="library" className="bg-[#0b0c10] text-white px-6 py-12 scroll-mt-16 w-full">
       <div className="max-w-7xl mx-auto space-y-6">
         
-        {/* Section Heading & Subtitle Aligned Properly */}
+        
         <div className="space-y-1 text-left px-1">
           <h2 className="text-2xl md:text-3xl font-black tracking-tight uppercase text-white">
             THE LIBRARY
@@ -23,7 +23,6 @@ const LibrarySection: React.FC<LibrarySectionProps> = ({ workouts = workoutsData
           </p>
         </div>
 
-        {/* Grid System with Proper Gap */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {workouts.map((workout) => (
             <WorkoutCard key={workout.id} workout={workout} />
