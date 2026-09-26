@@ -48,7 +48,7 @@ export function PlanProvider({ children }: { children: React.ReactNode }) {
     }, 3000);
   };
 
-  // Updated togglePlan logic
+  
   const togglePlan = (workout: Workout) => {
     const exists = todayPlan.some((item) => item.id === workout.id);
     
