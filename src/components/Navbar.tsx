@@ -16,7 +16,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 bg-[#0b0c10]/90 backdrop-blur-md border-b border-zinc-800/80 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
-        {/* Left: Public Logo Image + FITLOG Text */}
+        
         <Link href="/" className="flex items-center gap-2.5 group">
           <img
             src="/logo.png"
@@ -28,7 +28,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Middle: Navigation Links */}
+        
         <nav className="flex items-center gap-2 bg-[#13151b] p-1.5 rounded-full border border-zinc-800">
           <Link
             href="/"
@@ -52,9 +52,8 @@ export default function Navbar() {
           </Link>
         </nav>
 
-        {/* Right: Status Badges */}
         <div className="flex items-center gap-3">
-          {/* Plan Badge (Filled) - Redirects to Today's Plan Tab */}
+          
           <Link
             href="/my-plan?tab=plan"
             className="flex items-center gap-2 bg-[#ccff00] text-black font-extrabold text-xs px-3.5 py-1.5 rounded-full hover:bg-[#b8e600] transition-colors"
@@ -65,7 +64,7 @@ export default function Navbar() {
             </span>
           </Link>
 
-          {/* Saved Badge (Outline) - Redirects to Saved Workouts Tab */}
+          
           <Link
             href="/my-plan?tab=saved"
             className="flex items-center gap-2 border border-zinc-700 hover:border-zinc-500 text-zinc-300 font-extrabold text-xs px-3.5 py-1.5 rounded-full transition-colors"
