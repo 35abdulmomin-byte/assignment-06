@@ -8,27 +8,27 @@ const HeroBanner = () => {
     <section className="bg-[#0b0c10] text-white px-6 py-10 md:py-16">
       <div className="max-w-7xl mx-auto bg-[#13151b] rounded-3xl p-8 md:p-14 border border-zinc-800/60 flex flex-col-reverse md:flex-row items-center justify-between gap-10 overflow-hidden">
         
-        {/* Left Side Content */}
+        
         <div className="flex-1 space-y-6">
-          {/* Eyebrow text */}
+         
           <div className="inline-block">
             <span className="text-[#ccff00] text-xs font-bold tracking-widest uppercase bg-[#ccff00]/10 px-3 py-1 rounded-md border border-[#ccff00]/20">
               WORKOUT LIBRARY
             </span>
           </div>
 
-          {/* Main Heading */}
+          
           <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-none uppercase font-sans">
             TRAIN WITH INTENT. <br />
             <span className="text-white">LOG EVERY SET.</span>
           </h1>
 
-          {/* Subtitle */}
+          
           <p className="text-zinc-400 text-sm md:text-base max-w-lg leading-relaxed">
             FitLog is a dark, no-nonsense gym companion: pick a lift, lock it into today&apos;s plan, and watch the week&apos;s work add up.
           </p>
 
-          {/* CTA Button with Icon scrolling to #library */}
+          
           <div>
             <a
               href="#library"
@@ -52,7 +52,7 @@ const HeroBanner = () => {
           </div>
         </div>
 
-        {/* Right Side Banner Image */}
+        
         <div className="flex-1 flex justify-center items-center">
           <div className="relative w-full max-w-md h-80 md:h-96">
             <Image
