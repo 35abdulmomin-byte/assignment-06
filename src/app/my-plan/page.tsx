@@ -35,10 +35,10 @@ function MyPlanContent() {
     return () => clearTimeout(timer);
   }, []);
 
-  // ১. একটিভ ট্যাব নির্বাচন
+  
   const rawList = activeTab === 'plan' ? todayPlan : savedWorkouts;
 
-  // ২. সিলেক্টেড অপশন অনুযায়ী লিস্ট সর্টিং
+  
   const sortedList = [...rawList].sort((a: any, b: any) => {
     if (sortBy === 'duration') {
       return (b.duration || 0) - (a.duration || 0);
@@ -52,7 +52,7 @@ function MyPlanContent() {
     return 0;
   });
 
-  // ৩. ডায়নামিক সামারি ফিল্ড ক্যালকুলেশন
+ 
   const totalMinutes = rawList.reduce((acc, curr) => acc + (curr.duration || 0), 0);
   const totalCalories = rawList.reduce((acc, curr) => acc + (curr.caloriesBurned || 0), 0);
 
