@@ -59,7 +59,7 @@ function MyPlanContent() {
   return (
     <div className="px-6 py-10 max-w-7xl mx-auto space-y-10">
       
-      {/* Header */}
+      
       <div>
         <h1 className="text-3xl sm:text-5xl font-black uppercase tracking-tight text-white">
           MY PLAN
@@ -69,7 +69,6 @@ function MyPlanContent() {
         </p>
       </div>
 
-      {/* Dynamic Metrics Summary Row */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
         <div className="bg-[#13151b] border border-zinc-800 p-6 rounded-2xl space-y-1">
           <p className="text-zinc-500 font-bold text-xs uppercase">
@@ -89,10 +88,10 @@ function MyPlanContent() {
         </div>
       </div>
 
-      {/* Tabs & Sort By Controls Bar */}
+     
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-zinc-800 pb-4">
         
-        {/* Left: Tabs */}
+        
         <div className="flex items-center gap-3">
           <button
             onClick={() => setActiveTab('plan')}
@@ -116,7 +115,7 @@ function MyPlanContent() {
           </button>
         </div>
 
-        {/* Right: Sort By Dropdown */}
+        
         <div className="flex items-center gap-3">
           <span className="text-sm font-extrabold text-zinc-400">Sort By</span>
           <div className="relative inline-block">
@@ -129,7 +128,7 @@ function MyPlanContent() {
               <option value="calories">Calories</option>
               <option value="rating">Rating</option>
             </select>
-            {/* Custom Down Chevron Icon */}
+           
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-zinc-400">
               <svg
                 className="w-4 h-4"
@@ -145,13 +144,12 @@ function MyPlanContent() {
 
       </div>
 
-      {/* Content Area */}
       {loading ? (
         <div className="py-20 text-center text-zinc-400 font-bold animate-pulse">
           Loading workouts…
         </div>
       ) : sortedList.length === 0 ? (
-        /* Empty State */
+       
         <div className="bg-[#13151b] border border-zinc-800 rounded-3xl p-12 text-center space-y-4 max-w-md mx-auto my-10">
           <h3 className="text-2xl font-black uppercase text-white">NOTHING HERE YET</h3>
           <p className="text-zinc-400 text-sm">
@@ -167,7 +165,7 @@ function MyPlanContent() {
           </Link>
         </div>
       ) : (
-        /* Sorted List */
+        
         <div className="space-y-4">
           {sortedList.map((item: any) => (
             <div
@@ -195,7 +193,7 @@ function MyPlanContent() {
                 </div>
               </div>
 
-              {/* Actions */}
+              
               <div className="flex items-center gap-3 w-full sm:w-auto justify-end border-t sm:border-t-0 pt-3 sm:pt-0 border-zinc-800">
                 <Link
                   href={`/workout/${item.id}`}

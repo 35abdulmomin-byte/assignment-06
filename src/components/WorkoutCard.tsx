@@ -14,7 +14,7 @@ const WorkoutCard: React.FC<WorkoutCardProps> = ({ workout }) => {
       href={`/workout/${workout.id}`}
       className="group bg-[#13151b] border border-zinc-800/80 rounded-2xl overflow-hidden hover:border-[#ccff00]/50 transition-all duration-300 flex flex-col cursor-pointer w-full"
     >
-      {/* 📷 Image Container with object-top / object-contain to prevent head cropping */}
+      
       <div className="relative w-full h-56 bg-zinc-900 overflow-hidden flex items-center justify-center">
         <img
           src={workout.image}
@@ -23,10 +23,10 @@ const WorkoutCard: React.FC<WorkoutCardProps> = ({ workout }) => {
         />
       </div>
 
-      {/* Content Area */}
+      
       <div className="p-5 flex flex-col justify-between flex-1 space-y-4 text-left">
         <div className="space-y-2.5">
-          {/* 🏷️ Muscle Group Badges */}
+       
           <div className="flex flex-wrap items-center gap-1.5">
             {workout.muscleGroups.map((group, idx) => (
               <span
@@ -38,7 +38,7 @@ const WorkoutCard: React.FC<WorkoutCardProps> = ({ workout }) => {
             ))}
           </div>
 
-          {/* 📛 Workout Title */}
+          
           <h3 className="text-white font-extrabold text-base md:text-lg uppercase tracking-wide group-hover:text-[#ccff00] transition-colors leading-snug">
             {workout.name}
           </h3>
@@ -49,7 +49,7 @@ const WorkoutCard: React.FC<WorkoutCardProps> = ({ workout }) => {
           </p>
         </div>
 
-        {/* 🔴 Stats Footer */}
+       
         <div className="flex items-center gap-4 text-zinc-400 text-xs pt-3 border-t border-zinc-800/60">
           <div className="flex items-center gap-1.5">
             <svg className="w-3.5 h-3.5 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
